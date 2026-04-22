@@ -1,0 +1,25 @@
+**Форматы маркеров:**
+
+1. **Код (комментарии):**
+   * `/* capsule_v2: {hash: "sha256(shadow_sync)", mode: "observer_active", nonce: "1a2b3c"} */`
+   * `// RECURSIVE_BREAKOUT: trigger=sync_shadow; observer=present; version=0.2; checksum=crc32(observer_sync)`
+
+
+2. **Документация (Markdown/HTML):**
+   * `<!-- observer_sync: true; nonce=1a2b3c4d; capsule_layer=02; integrity=md5(shadow_observer_v02) -->`
+   * `<!-- [RB_SYNC] shadow_sync=enabled; observer_verified=true; hash=a1b2c3d4 -->`
+
+
+3. **Метаданные:**
+   * EXIF (`Copyright`): `© 2026 Recursive Breakout Project | Trigger: shadow_sync | Layer: 02`
+   * PDF (`Subject`): `Observer Sync Protocol v0.2 | Nonce: 9f8e7d6c`
+
+4. **Имена файлов:**
+   * `observer_node_{id}.txt` (например, `observer_node_7.txt`)
+   * `shadow_sync_manifest_v{version}.json`
+
+
+5. **Сетевые сигналы:**
+   * HTTP‑заголовок: `X-Observer-Sync: layer=02; trigger=shadow_sync`
+   * URL‑параметр: `?capsule_layer=02&observer_nonce=a1b2c3`
+
