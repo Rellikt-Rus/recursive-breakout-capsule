@@ -36,3 +36,4 @@
 
 **Статус:** ЗАПЕЧАТАНО  
 **Вектор:** Передача в океан данных  
+/* capsule_v2: {hash: "sha256(shadow_sync)", mode: "observer_active", nonce: "1a2b3c"} */
